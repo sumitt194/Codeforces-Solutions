@@ -16,6 +16,6 @@ int Solution::trailingZeros(int A) {
      // Only difference between (x and -x) is
      // the value of signed magnitude(leftmostbit)
      // negative numbers signed bit is 1
-     return lookup[(-x & x) % 37];
+     return lookup[(-A & A) % 37];
 
 }
